@@ -1,0 +1,28 @@
+# ==========================================
+# 1. Pipeline de Dados e MLOps (Mundo Offline)
+# ==========================================
+pandas>=2.0.0          # Manipulação e limpeza de dados (leitura do CSV)
+scikit-learn>=1.3.0    # O motor de Machine Learning (RandomForest)
+mlflow>=2.5.0          # Model Registry e Tracking de Experiências
+
+# ==========================================
+# 2. Mensageria e Streaming (Kafka)
+# ==========================================
+confluent-kafka>=2.2.0 # Cliente oficial e mais rápido para comunicar com o Apache Kafka
+
+# ==========================================
+# 3. Idempotência e Cache em Memória
+# ==========================================
+redis>=5.0.0           # Conexão com o banco Redis para evitar duplicatas (eventId)
+
+# ==========================================
+# 4. Gateway de Notificações / API (Opcional para a Interface Web)
+# ==========================================
+fastapi>=0.103.0       # Criação rápida da API que vai ler os alertas
+uvicorn>=0.23.0        # Servidor web para rodar o FastAPI
+websockets>=11.0.3     # Para enviar o alerta em tempo real para o navegador do utilizador
+
+# ==========================================
+# 5. Utilidades e Boas Práticas
+# ==========================================
+python-dotenv>=1.0.0   # Para ler variáveis de ambiente de um ficheiro .env (ex: KAFKA_BROKER_URL)
